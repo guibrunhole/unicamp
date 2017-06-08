@@ -105,3 +105,13 @@ pathToNode :: [Dnode] -> Node -> [Node]
 pathToNode dnodes dest = 
   let dn@(n, (d, p)) = dnodeForNode dnodes dest
   in if n == p then [n] else pathToNode dnodes p ++ [n]
+
+position :: Eq a => a -> [a] -> Int
+position i xs = 
+  case i `elemIndex` xs of
+    Just n -> n
+    Nothing -> 0
+
+getNode :: String -> String -> String
+getNode a =
+  let b (reverse a)
