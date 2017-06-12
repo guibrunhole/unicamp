@@ -11,6 +11,8 @@ module Dijkstra
 ) where
 
 import Data.List
+import System.Environment 
+import qualified Data.ByteString.Lazy as B 
 
 data Edge = Edge { node::Node, weight::Float } deriving (Show)
 type Node = String
@@ -112,6 +114,24 @@ position i xs =
     Just n -> n
     Nothing -> 0
 
-getNode :: String -> String -> String
-getNode a =
-  let b (reverse a)
+--main = do
+--	(fileName) <- getArgs
+--	txt <- readFile fileName
+--
+--	let lines_file = lines txt
+--	let target = head (reverse lines_file)
+--	let new_lines_file = init lines_file
+--	let origin = head (reverse new_lines_file)
+--
+--	let new_txt = init(init(init(init txt)))
+--	let g = fromText new_txt False
+--	let soln = dijkstra g origin -- ponto inicial
+--	let path = pathToNode soln target
+--	let cost = map fst (map snd soln)!!(position target (map fst soln)) -- ponto final
+--
+--	putStrLn ("Inicial: "++origin)
+--	putStrLn ("Final: "++target)
+--	putStrLn ("Caminho: ")
+--	path
+--	putStrLn ("Custo: ")
+--	cost
