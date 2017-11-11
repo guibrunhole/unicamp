@@ -1,6 +1,8 @@
  1.
  http://www.computacaointeligente.com.br/algoritmos/knn-k-vizinhos-mais-proximos/
 
+ https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/
+
  
  A clusterização tem como objetivo determinar quantos grupos/rótulos de classes existem em uma determinada base de dados. Portanto, a classificação assume que as classes já são conhecidas previamente através de um processo de agrupamento. Algoritmos de clusterização utilizam similaridades entre atributos das variáveis de entrada sem conhecimento prévio de qual grupo a mesma pertence, caracterizando assim, um problema não supervisionado. Essa definição também difere dos problemas de classificação, pelo fato de aprender através de amostras com rótulos conhecidos, é considerado um problema supervisionado.
 
